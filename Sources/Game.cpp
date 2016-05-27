@@ -214,14 +214,7 @@ void Game::LoadUI()
 // Populate the level with items.
 void Game::PopulateLevel()
 {
-	// Create a gold object.
-	std::unique_ptr<Gold> gold = std::make_unique<Gold>();
 
-	// Set the gold position.
-	gold->SetPosition(sf::Vector2f(m_screenCenter.x - 50.f, m_screenCenter.y));
-
-	// Add the gold item to our collection of all objects.
-	m_items.push_back(std::move(gold));
 }
 
 // Returns the running state of the game.
