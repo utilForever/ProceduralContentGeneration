@@ -7,7 +7,7 @@ Item::Item() :
 	m_textOffset({0.f, 0.f})
 {
 	// Load font.
-	m_font.loadFromFile("../resources/fonts/ADDSBP__.TTF");
+	m_font.loadFromFile("../../resources/fonts/ADDSBP__.TTF");
 	m_text.setFont(m_font);
 
 	// Setup the text.

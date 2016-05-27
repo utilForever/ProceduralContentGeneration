@@ -10,7 +10,7 @@ m_dexterity(0),
 m_stamina(0)
 {
 	// Load and set sprite.
-	SetSprite(TextureManager::GetTexture(TextureManager::AddTexture("../resources/loot/potions/spr_potion_stamina.png")), false, 8, 12);
+	SetSprite(TextureManager::GetTexture(TextureManager::AddTexture("../../resources/loot/potions/spr_potion_stamina.png")), false, 8, 12);
 
 	// Set the item type.
 	m_type = ITEM::POTION;

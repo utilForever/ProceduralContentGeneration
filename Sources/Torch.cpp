@@ -6,7 +6,7 @@ Torch::Torch() :
 m_brightness(1.f)
 {
 	// Set sprite.
-	int textureID = TextureManager::AddTexture("../resources/spr_torch.png");
+	int textureID = TextureManager::AddTexture("../../resources/spr_torch.png");
 	SetSprite(TextureManager::GetTexture(textureID), false, 5, 12);
 }
 

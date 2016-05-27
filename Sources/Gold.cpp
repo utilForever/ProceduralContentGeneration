@@ -9,7 +9,7 @@ Gold::Gold()
 
 	// Set the sprite.
 	int textureID;
-	textureID = TextureManager::AddTexture("../resources/loot/gold/spr_pickup_gold_medium.png");
+	textureID = TextureManager::AddTexture("../../resources/loot/gold/spr_pickup_gold_medium.png");
 
 	this->SetSprite(TextureManager::GetTexture(textureID), false, 8, 12);
 

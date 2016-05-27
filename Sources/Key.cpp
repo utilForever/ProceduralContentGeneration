@@ -5,7 +5,7 @@
 Key::Key()
 {
 	// Set item sprite.
-	int textureID = TextureManager::AddTexture("../resources/loot/key/spr_pickup_key.png");
+	int textureID = TextureManager::AddTexture("../../resources/loot/key/spr_pickup_key.png");
 	SetSprite(TextureManager::GetTexture(textureID), false, 8, 12);
 
 	// Set item name.

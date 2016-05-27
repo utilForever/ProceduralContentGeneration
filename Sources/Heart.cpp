@@ -5,7 +5,7 @@
 Heart::Heart()
 {
 	// Set item sprite.
-	SetSprite(TextureManager::GetTexture(TextureManager::AddTexture("../resources/loot/heart/spr_pickup_heart.png")), false, 8, 12);
+	SetSprite(TextureManager::GetTexture(TextureManager::AddTexture("../../resources/loot/heart/spr_pickup_heart.png")), false, 8, 12);
 
 	// Set health value.
 	m_health = 15;
