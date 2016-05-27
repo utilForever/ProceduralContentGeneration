@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F195F0D5-C18F-49B2-AFF7-C8A2FEE44A92}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>RoguelikeTemplate</RootNamespace>
+    <ProjectName>RoguelikeTemplate</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\..\$(Configuration)\2013\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>..\..\$(Configuration)\2013\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\Includes;..\..\Libraries\SFML\2013\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\..\Libraries\SFML\2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-main-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\Libraries\SFML\2013\include</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>PCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-window.lib;sfml-system.lib;sfml-main.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\Libraries\SFML\2013\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\Enemy.cpp" />
+    <ClCompile Include="..\..\Sources\Entity.cpp" />
+    <ClCompile Include="..\..\Sources\Game.cpp" />
+    <ClCompile Include="..\..\Sources\Gem.cpp" />
+    <ClCompile Include="..\..\Sources\Gold.cpp" />
+    <ClCompile Include="..\..\Sources\Heart.cpp" />
+    <ClCompile Include="..\..\Sources\Humanoid.cpp" />
+    <ClCompile Include="..\..\Sources\Input.cpp" />
+    <ClCompile Include="..\..\Sources\Item.cpp" />
+    <ClCompile Include="..\..\Sources\Key.cpp" />
+    <ClCompile Include="..\..\Sources\Level.cpp" />
+    <ClCompile Include="..\..\Sources\main.cpp" />
+    <ClCompile Include="..\..\Sources\Object.cpp" />
+    <ClCompile Include="..\..\Sources\PCH.cpp" />
+    <ClCompile Include="..\..\Sources\Player.cpp" />
+    <ClCompile Include="..\..\Sources\Potion.cpp" />
+    <ClCompile Include="..\..\Sources\Projectile.cpp" />
+    <ClCompile Include="..\..\Sources\Slime.cpp" />
+    <ClCompile Include="..\..\Sources\SoundBufferManager.cpp" />
+    <ClCompile Include="..\..\Sources\TextureManager.cpp" />
+    <ClCompile Include="..\..\Sources\Torch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Includes\Enemy.h" />
+    <ClInclude Include="..\..\Includes\Entity.h" />
+    <ClInclude Include="..\..\Includes\Game.h" />
+    <ClInclude Include="..\..\Includes\Gem.h" />
+    <ClInclude Include="..\..\Includes\Gold.h" />
+    <ClInclude Include="..\..\Includes\Heart.h" />
+    <ClInclude Include="..\..\Includes\Humanoid.h" />
+    <ClInclude Include="..\..\Includes\Input.h" />
+    <ClInclude Include="..\..\Includes\Item.h" />
+    <ClInclude Include="..\..\Includes\Key.h" />
+    <ClInclude Include="..\..\Includes\Level.h" />
+    <ClInclude Include="..\..\Includes\Object.h" />
+    <ClInclude Include="..\..\Includes\PCH.h" />
+    <ClInclude Include="..\..\Includes\Player.h" />
+    <ClInclude Include="..\..\Includes\Potion.h" />
+    <ClInclude Include="..\..\Includes\Projectile.h" />
+    <ClInclude Include="..\..\Includes\Slime.h" />
+    <ClInclude Include="..\..\Includes\SoundBufferManager.h" />
+    <ClInclude Include="..\..\Includes\TextureManager.h" />
+    <ClInclude Include="..\..\Includes\Torch.h" />
+    <ClInclude Include="..\..\Includes\Util.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Items">
+      <UniqueIdentifier>{726acf9f-89e8-493c-bc03-e2c4dff9da5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Items">
+      <UniqueIdentifier>{2c1f17f0-1735-404a-adba-440b45d3cc21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Characters">
+      <UniqueIdentifier>{0034e1f8-58f6-4194-8bb6-25994b5fd723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Items\Loot">
+      <UniqueIdentifier>{76f2544c-ca10-4a56-b4b1-218621830ce0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Items\Loot">
+      <UniqueIdentifier>{514aa6d0-a377-49e2-b4f9-6e71f87a2ada}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{7470165e-9613-4441-918c-73d20d9fb841}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Manager Classes">
+      <UniqueIdentifier>{ede54b8d-fb3a-4a82-afab-2a7f4ae23fd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Manager Classes">
+      <UniqueIdentifier>{39e65657-89e4-422d-b3ff-04fabb449438}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Items\Environment">
+      <UniqueIdentifier>{99a6506d-1579-4b48-b6cc-2f7e909e1097}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Items\Environment">
+      <UniqueIdentifier>{e755797f-cbfe-470e-bf93-30b9bab9001f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters">
+      <UniqueIdentifier>{126e7787-8759-455a-b851-ae31b2ba3924}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Characters\Enemies">
+      <UniqueIdentifier>{04b3795c-51fc-45bb-8f43-d384c6a1da89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Characters\Enemies">
+      <UniqueIdentifier>{b885cf11-c405-42c3-8422-a57d57f06fbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Sources\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Object.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\PCH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\SoundBufferManager.cpp">
+      <Filter>Source Files\Manager Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\TextureManager.cpp">
+      <Filter>Source Files\Manager Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Item.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Projectile.cpp">
+      <Filter>Source Files\Items</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Gem.cpp">
+      <Filter>Source Files\Items\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Gold.cpp">
+      <Filter>Source Files\Items\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Heart.cpp">
+      <Filter>Source Files\Items\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Key.cpp">
+      <Filter>Source Files\Items\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Potion.cpp">
+      <Filter>Source Files\Items\Loot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Torch.cpp">
+      <Filter>Source Files\Items\Environment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Entity.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Player.cpp">
+      <Filter>Source Files\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Enemy.cpp">
+      <Filter>Source Files\Characters\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Humanoid.cpp">
+      <Filter>Source Files\Characters\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Sources\Slime.cpp">
+      <Filter>Source Files\Characters\Enemies</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Includes\Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Level.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Object.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\PCH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Util.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\SoundBufferManager.h">
+      <Filter>Header Files\Manager Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\TextureManager.h">
+      <Filter>Header Files\Manager Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Item.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Projectile.h">
+      <Filter>Header Files\Items</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Gem.h">
+      <Filter>Header Files\Items\Loot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Gold.h">
+      <Filter>Header Files\Items\Loot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Heart.h">
+      <Filter>Header Files\Items\Loot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Key.h">
+      <Filter>Header Files\Items\Loot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Potion.h">
+      <Filter>Header Files\Items\Loot</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Torch.h">
+      <Filter>Header Files\Items\Environment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Entity.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Player.h">
+      <Filter>Header Files\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Enemy.h">
+      <Filter>Header Files\Characters\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Humanoid.h">
+      <Filter>Header Files\Characters\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Includes\Slime.h">
+      <Filter>Header Files\Characters\Enemies</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
